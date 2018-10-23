@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Page1">
+    <ContentPage.Content>
+        <Grid ColumnSpacing="5" RowSpacing="10" BackgroundColor="White">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Label
+            Grid.Row="0" 
+            Grid.Column="0"
+            Grid.ColumnSpan="5"
+            Grid.RowSpan="1"
+            Text="A  B  O  U  T     M  E"
+            BackgroundColor="LightSeaGreen"
+            TextColor="White"
+            
+            Font="33" 
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"
+                
+         />
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

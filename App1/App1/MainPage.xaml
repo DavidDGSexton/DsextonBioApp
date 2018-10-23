@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App1"
+             x:Class="App1.MainPage">
+
+    <Grid ColumnSpacing="5" RowSpacing="10" BackgroundColor="White">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+
+        <Frame 
+            Grid.Row="3" 
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            Grid.RowSpan="2"
+            Margin="-5,5,-75,-5" 
+            Opacity=".1"
+            CornerRadius="75"
+            BackgroundColor="Black"
+            
+        />
+        <Frame 
+            Grid.Row="3" 
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            Grid.RowSpan="2"
+            Margin="0,0,-75,0" 
+            CornerRadius="75"
+            BackgroundColor="Aquamarine"
+            
+        />
+        <Frame
+            Grid.Row="3" 
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            Grid.RowSpan="2"
+            Margin="25,25,-75,20" 
+            Opacity=".1"
+            CornerRadius="60"
+            BackgroundColor="Black"
+            
+            
+        />
+        <Button
+            Grid.Row="3" 
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            Grid.RowSpan="2"
+            Margin="30,25,-75,25" 
+            CornerRadius="60"
+            BackgroundColor="MediumAquamarine"
+              
+            Text="About Me      "
+            TextColor="White"
+            Font="36" 
+           
+           x:Name="homeaboutButton" 
+           Clicked="homeaboutButton_Clicked"
+            
+        />
+        <Frame
+
+            Rotation="20"
+            Grid.Row="1" 
+            Grid.Column="0"
+            Grid.ColumnSpan="5"
+            Grid.RowSpan="2"     
+            Margin="-40,20,-40,15"
+            Opacity=".1"
+            BackgroundColor="Black"
+  
+
+        />
+        <Frame
+
+            Rotation="20"
+            Grid.Row="1" 
+            Grid.Column="0"
+            Grid.ColumnSpan="5"
+            Grid.RowSpan="2"     
+            Margin="-400,20"
+            BackgroundColor="Aquamarine"
+        >
+            <Label
+              Text="David Sexton"
+              TextColor="White"
+              Font="58" 
+              HorizontalTextAlignment="Center"
+              VerticalTextAlignment="Center"
+              FontAttributes="Bold"
+                
+              />
+
+        </Frame>
+        <Frame 
+            Grid.Row="5" 
+            Grid.Column="0"
+            Grid.ColumnSpan="4"
+            Grid.RowSpan="2"
+            Margin="-65,35,5,30"
+            CornerRadius="45"
+            BackgroundColor="Black"
+            Opacity=".1"
+            
+        />
+        <Frame 
+            Grid.Row="5" 
+            Grid.Column="0"
+            Grid.ColumnSpan="4"
+            Grid.RowSpan="2"
+            Margin="-75,35,0,35"
+            CornerRadius="45"
+            BackgroundColor="LightSeaGreen"
+            
+        />
+        <Frame
+            Grid.Row="5" 
+            Grid.Column="0"
+            Grid.ColumnSpan="4"
+            Grid.RowSpan="2"
+            Margin="120,50,25,45"
+            CornerRadius="25"
+            BackgroundColor="Black"
+            Opacity=".1"
+        />
+       
+        <Button 
+            Grid.Row="5" 
+            Grid.Column="0"
+            Grid.ColumnSpan="4"
+            Grid.RowSpan="2"
+            Margin="125,50,25,50"
+            CornerRadius="25"
+            BackgroundColor="Teal"
+            Text="Skills" 
+            FontSize="25"
+            
+        />
+   
+
+
+        <Button
+            Grid.Row="7" 
+            Grid.Column="0"
+            Grid.ColumnSpan="5"
+            Grid.RowSpan="1"
+            Margin="0,0,0,-100"
+            CornerRadius="75"
+            BackgroundColor="Teal"
+            
+
+    
+            
+            
+        />
+        <Button
+            Grid.Row="7" 
+            Grid.Column="1"
+            Grid.ColumnSpan="3"
+            Grid.RowSpan="1"
+            Margin="-50,20,-50,-100"
+            CornerRadius="75"
+            BackgroundColor="LightSeaGreen"
+            
+        />
+        <Label
+            Grid.Row="7" 
+            Grid.Column="1"
+            Grid.ColumnSpan="3"
+            Grid.RowSpan="1"
+            Text="C O N T A C T"
+            TextColor="White"
+            
+            Font="33" 
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="End"
+                
+         />
+    
+            
+
+
+    </Grid>
+</ContentPage>
