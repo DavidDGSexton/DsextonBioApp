@@ -152,6 +152,8 @@
             Text="Skills" 
             TextColor="White"
             FontSize="25"
+            x:Name="SkillsButton" 
+            Clicked="SkillsButton_Clicked"
             
         />
    
@@ -179,8 +181,12 @@
             Margin="-50,20,-50,-100"
             CornerRadius="75"
             BackgroundColor="LightSeaGreen"
+            x:Name="ContactButton" 
+            Clicked="ContactButton_Clicked"
             
         />
+
+
         <Label
             Grid.Row="7" 
             Grid.Column="1"
@@ -188,14 +194,20 @@
             Grid.RowSpan="1"
             Text="C O N T A C T"
             TextColor="White"
-            
+        
+
             Font="33" 
             HorizontalTextAlignment="Center"
             VerticalTextAlignment="End"
+         >
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="ContactLabel_Tap" />
+            </Label.GestureRecognizers>
                 
-         />
+
+        </Label>
+   
     
-            
 
 
     </Grid>

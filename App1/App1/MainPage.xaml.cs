@@ -16,7 +16,22 @@ namespace App1
 
         private void homeaboutButton_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Page1());
+            Navigation.PushAsync(new AboutMePage());
+        }
+
+        private void ContactLabel_Tap(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ContactPage());
+        }
+
+        private void SkillsButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new SkillsPage());
+        }
+
+        private void ContactButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ContactPage());
         }
     }
 }

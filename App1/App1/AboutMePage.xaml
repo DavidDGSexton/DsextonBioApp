@@ -1,9 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App1.Page1">
+             x:Class="App1.AboutMePage">
     <ContentPage.Content>
-        
         <StackLayout BackgroundColor="White">
 
             <Label
@@ -41,25 +40,17 @@ As a career, I am looking to
 create programs to help people
 operate more efficiently with
 daily tasks. My hobby is
-creating music and editing sound
-in the hopes that one day
-I can find a defining sound and
-musical characteristic that
-sends a message to people.
-"
+creating music and editing sound."
                  TextColor="Black"
                  FontSize="Large"
                 >
-                    
+
                 </Label>
-                </ScrollView>
-                <Image Source="MyPicture1.jpg" Margin="25" >
-                    
-                </Image>
-                
-                
-            
-            
+            </ScrollView>
+            <Image Source="MyPicture1.jpg" Margin="25" >
+
+            </Image>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
