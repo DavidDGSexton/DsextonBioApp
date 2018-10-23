@@ -25,7 +25,7 @@
         </Grid.ColumnDefinitions>
 
 
-        <Frame 
+        <Button 
             Grid.Row="3" 
             Grid.Column="1"
             Grid.ColumnSpan="4"
@@ -36,7 +36,7 @@
             BackgroundColor="Black"
             
         />
-        <Frame 
+        <Button
             Grid.Row="3" 
             Grid.Column="1"
             Grid.ColumnSpan="4"
@@ -46,7 +46,7 @@
             BackgroundColor="Aquamarine"
             
         />
-        <Frame
+        <Button
             Grid.Row="3" 
             Grid.Column="1"
             Grid.ColumnSpan="4"
@@ -109,7 +109,7 @@
               />
 
         </Frame>
-        <Frame 
+        <Button
             Grid.Row="5" 
             Grid.Column="0"
             Grid.ColumnSpan="4"
@@ -120,7 +120,7 @@
             Opacity=".1"
             
         />
-        <Frame 
+        <Button
             Grid.Row="5" 
             Grid.Column="0"
             Grid.ColumnSpan="4"
@@ -130,7 +130,7 @@
             BackgroundColor="LightSeaGreen"
             
         />
-        <Frame
+        <Button
             Grid.Row="5" 
             Grid.Column="0"
             Grid.ColumnSpan="4"
@@ -150,6 +150,7 @@
             CornerRadius="25"
             BackgroundColor="Teal"
             Text="Skills" 
+            TextColor="White"
             FontSize="25"
             
         />
