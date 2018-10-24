@@ -3,10 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App1.ContactPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="ContactPlaceholder"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <ScrollView>
+            <StackLayout Padding="30" BackgroundColor="MediumAquamarine">
+       
+            
+            <Entry x:Name="nameEntry" Placeholder="name" TextColor="White"/>
+            <Entry x:Name="emailEntry" Placeholder="email" />
+            <Editor x:Name="messageEditor" HeightRequest="100" />
+            <Button Text="Submit" x:Name="SubmitButton" Pressed="SubmitButton_Pressed" />
+                
+                
+         
         </StackLayout>
+   </ScrollView>
     </ContentPage.Content>
 </ContentPage>

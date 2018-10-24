@@ -4,9 +4,10 @@
              x:Class="App1.SkillsPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="SkillsPlaceholder"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Entry x:Name="skillEntry" />
+            <Button x:Name="skillButton" Text="Add Skill" Clicked="skillButton_Clicked" />
+
+            <ListView x:Name="skillsList" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
