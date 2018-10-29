@@ -4,13 +4,14 @@
              x:Class="App1.ContactPage">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout Padding="30" BackgroundColor="MediumAquamarine">
+            <StackLayout Margin ="50" Padding="30" BackgroundColor="MediumAquamarine">
        
             
             <Entry x:Name="nameEntry" Placeholder="name" TextColor="White"/>
             <Entry x:Name="emailEntry" Placeholder="email" />
-            <Editor x:Name="messageEditor" HeightRequest="100" />
-            <Button Text="Submit" x:Name="SubmitButton" Pressed="SubmitButton_Pressed" />
+                <Label Text="Message" FontSize="Large" TextColor="White" />
+                <Editor x:Name="messageEditor" HeightRequest="100" VerticalOptions="StartAndExpand" />
+            <Button Text="Submit" x:Name="SubmitButton" Pressed="SubmitButton_Pressed" HorizontalOptions="End" VerticalOptions="End" />
                 
                 
          

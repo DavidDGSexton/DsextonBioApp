@@ -13,25 +13,34 @@ namespace App1
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class SkillsPage : ContentPage
 	{
-        public ObservableCollection<string> Skills { get; set; }
+        public ObservableCollection<Skill> Skills { get; set; }
 
 		public SkillsPage ()
 		{
 			InitializeComponent ();
 
-            this.Skills = new ObservableCollection<string>();
-		}
+            this.Skills = new ObservableCollection<Skill>();
 
-        private void skillButton_Clicked(object sender, EventArgs e)
-        {
-           
+            Skill skill1 = new Skill
+            {
+                Description = "Test of Description",
+                Name = "Test",
+                Image = "https://image.flaticon.com/icons/svg/24/24143.svg"
+            };
+            this.Skills.Add(skill1);
 
-            this.Skills.Add(skillEntry.Text);
-
-            skillEntry.Text = "";
-
-            skillsList.ItemsSource = this.Skills;
+            this.skillsList.ItemsSource = this.Skills;
 
         }
+
+        public class Skill
+        {
+            public string Image { get; set; }
+            public string Name { get; set; }
+            public string Description { get; set; }
+        }
+
+
+
     }
 }

@@ -4,10 +4,43 @@
              x:Class="App1.SkillsPage">
     <ContentPage.Content>
         <StackLayout>
-            <Entry x:Name="skillEntry" />
-            <Button x:Name="skillButton" Text="Add Skill" Clicked="skillButton_Clicked" />
 
-            <ListView x:Name="skillsList" />
+
+            <ListView x:Name="skillsList"  >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Padding="15">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="30"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Image WidthRequest="50"
+                                           HeightRequest="50"
+                                           Source="{Binding Image}"
+                                           Grid.Row="0"
+                                           Grid.Column="0"
+                                           Grid.RowSpan="2"/>
+                                    <Label Text="{Binding Name}"
+                                           FontAttributes="Bold"
+                                           FontSize="Large"
+                                           Grid.Row="0"
+                                           Grid.Column="1"/>
+                                    <Label Text="{Binding Description}"
+                                           TextColor="Gray"
+                                           Grid.Row="1"
+                                           Grid.Column="1"/>
+                                </Grid>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

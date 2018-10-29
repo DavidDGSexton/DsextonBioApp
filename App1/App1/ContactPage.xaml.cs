@@ -21,22 +21,22 @@ namespace App1
         {
             if (string.IsNullOrEmpty(nameEntry.Text))
             {
-                DisplayAlert("Error!", "Please enter Name", "Ok");
+                DisplayAlert("Error!", "Please enter Name", "Ok!");
                 return;
             }
             else if (string.IsNullOrEmpty(emailEntry.Text))
             {
-                DisplayAlert("Error!", "Please enter email", "Ok");
+                DisplayAlert("Error!", "Please enter email", "Ok!");
                 return;
             }
             else if (string.IsNullOrEmpty(messageEditor.Text))
             {
-                DisplayAlert("Error!", "Please enter message", "Ok");
+                DisplayAlert("Error!", "Please enter message", "Ok!");
                 return;
             }
             else
             {
-                DisplayAlert("Alert!", "Your Message Was Sent", "Ok");
+                DisplayAlert("Alert!", "Your Message Was Sent", "Ok!");
                 Navigation.PushAsync(new MainPage());
             }
 
