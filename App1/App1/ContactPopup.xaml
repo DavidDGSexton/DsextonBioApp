@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<pages:PopupPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+    xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
+    x:Class="App1.ContactPopup">
+
+
+
+    <ScrollView>
+        
+        <StackLayout Margin ="50" Padding="30" BackgroundColor="MediumAquamarine" >
+
+            <Label Text="Contact Me" FontAttributes="Bold" FontSize="Large" HorizontalOptions="Center" TextColor="White" />
+            <Entry x:Name="nameEntry" Placeholder="name" TextColor="White"/>
+            <Entry x:Name="emailEntry" Placeholder="email" />
+            <Label Text="Message" FontSize="Medium" TextColor="White" />
+            <Editor x:Name="messageEditor" HeightRequest="100" VerticalOptions="FillAndExpand" />
+
+            <Button Text="Submit" x:Name="SubmitButton" Pressed="SubmitButton_Pressed" HorizontalOptions="End" VerticalOptions="End" />
+
+
+        </StackLayout>
+    </ScrollView>
+</pages:PopupPage>
