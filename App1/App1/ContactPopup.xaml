@@ -13,12 +13,13 @@
         <StackLayout Margin ="50" Padding="30" BackgroundColor="MediumAquamarine" >
 
             <Label Text="Contact Me" FontAttributes="Bold" FontSize="Large" HorizontalOptions="Center" TextColor="White" />
+            <Image Source = "envelope.png" HorizontalOptions="Center" />
             <Entry x:Name="nameEntry" Placeholder="name" TextColor="White"/>
             <Entry x:Name="emailEntry" Placeholder="email" />
             <Label Text="Message" FontSize="Medium" TextColor="White" />
             <Editor x:Name="messageEditor" HeightRequest="100" VerticalOptions="FillAndExpand" />
 
-            <Button Text="Submit" x:Name="SubmitButton" Pressed="SubmitButton_Pressed" HorizontalOptions="End" VerticalOptions="End" />
+            <Button Text="Submit" BackgroundColor="Teal" TextColor="White" x:Name="SubmitButton" Pressed="SubmitButton_Pressed" HorizontalOptions="End" VerticalOptions="End" />
 
 
         </StackLayout>
