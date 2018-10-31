@@ -25,7 +25,7 @@ namespace App1
             {
                 Description = "Test of Description",
                 Name = "Test",
-                Image = "https://image.flaticon.com/icons/svg/24/24143.svg"
+                Image = "envelope.png"
             };
             this.Skills.Add(skill1);
 

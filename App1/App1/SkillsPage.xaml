@@ -20,9 +20,10 @@
                                         <ColumnDefinition Width="50"/>
                                         <ColumnDefinition Width="*"/>
                                     </Grid.ColumnDefinitions>
-                                    <Image WidthRequest="50"
+                                   
+                                    <Image Source ="{Binding Image}"
+                                           WidthRequest="50"
                                            HeightRequest="50"
-                                           Source="{Binding Image}"
                                            Grid.Row="0"
                                            Grid.Column="0"
                                            Grid.RowSpan="2"/>
@@ -35,6 +36,7 @@
                                            TextColor="Gray"
                                            Grid.Row="1"
                                            Grid.Column="1"/>
+                                   
                                 </Grid>
                             </StackLayout>
                         </ViewCell>
