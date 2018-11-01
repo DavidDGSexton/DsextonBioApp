@@ -3,46 +3,72 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App1.SkillsPage">
     <ContentPage.Content>
-        <StackLayout>
-
-
-            <ListView x:Name="skillsList"  >
+        <StackLayout BackgroundColor="LightSeaGreen" >
+            <Label 
+                BackgroundColor="Teal"
+                Margin="0,0,0,10"
+                Text="S K I L L S"
+                FontAttributes="Bold"
+                TextColor="White"
+                Font="40" 
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+            />
+            <ScrollView>
+            <ListView x:Name="skillsList" RowHeight="75" Margin="10,0" >
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <ViewCell>
-                            <StackLayout Padding="15">
-                                <Grid>
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition Height="30"/>
-                                        <RowDefinition Height="*"/>
-                                    </Grid.RowDefinitions>
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="50"/>
-                                        <ColumnDefinition Width="*"/>
-                                    </Grid.ColumnDefinitions>
-                                   
-                                    <Image Source ="{Binding Image}"
-                                           WidthRequest="50"
-                                           HeightRequest="50"
-                                           Grid.Row="0"
+                        <ViewCell >
+                            <Grid>
+
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="30"/>
+                                    <RowDefinition Height="*"/>
+
+
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions >
+                                   <ColumnDefinition Width="60"/>
+                                    <ColumnDefinition Width="*"/>
+
+
+                                </Grid.ColumnDefinitions>
+
+
+                                <Image Source ="{Binding Image}" 
+                                         
+                                           VerticalOptions="CenterAndExpand"
                                            Grid.Column="0"
-                                           Grid.RowSpan="2"/>
-                                    <Label Text="{Binding Name}"
-                                           FontAttributes="Bold"
-                                           FontSize="Large"
                                            Grid.Row="0"
-                                           Grid.Column="1"/>
+                                          Grid.RowSpan="2"
+                                       
+                                           />
+                                    <Label Text="{Binding Name}"    
+                                       
+                                          
+                                           FontAttributes="Bold"
+                                           FontSize="20"
+                                           Grid.Column="1"
+                                           Grid.Row="0"
+                                           
+                                           
+                                           />
                                     <Label Text="{Binding Description}"
-                                           TextColor="Gray"
+                                           
+                                           FontSize="Small"
+                                           TextColor="White"
+                                           Grid.Column="1"
                                            Grid.Row="1"
-                                           Grid.Column="1"/>
-                                   
-                                </Grid>
-                            </StackLayout>
+                                           />
+                                
+                               </Grid>
+                            
+                           
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+            </ScrollView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
